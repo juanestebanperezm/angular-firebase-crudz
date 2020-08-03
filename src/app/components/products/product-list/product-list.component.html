@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-body">
+        <h6 class="text-center">Lista de productos</h6>
+        <table class="table table-sm table-hover">
+            <tbody>
+                <tr *ngFor="let product of productList" >
+
+                    <td>{{product.name}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.location}}</td>
+
+                    <td>
+                        <a class="btn btn-secondary text-white" (click)="onEdit(product)">
+                            editar
+                        </a>
+                        <a class="btn btn-danger text-white" (click)="onDelete(product.$key)">
+                            borrar
+                        </a>
+                    </td>
+
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

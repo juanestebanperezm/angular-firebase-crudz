@@ -88,7 +88,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "../node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           }
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-fire"
+    }
+  },
+  "defaultProject": "angular-fire",
+  "cli": {
+    "analytics": "606c0f22-9c96-453b-b690-c020088e3ee4"
+  }
 }
